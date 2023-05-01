@@ -10,6 +10,7 @@ export class AppComponent {
   date = '';
   amount = 0;
   height = 0;
+  miles = 0;
 
   onNameChange(value: string) {
     this.name = value;
@@ -25,5 +26,9 @@ export class AppComponent {
 
   onHeightChange(value: string) {
     this.height = parseFloat(value);
+  }
+
+  onMilesChange(value: string) {
+    this.miles = parseFloat(value);
   }
 }
